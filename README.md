@@ -3,25 +3,25 @@
 
 ## Introduction
 
-In this section, you'll learn about SQL, which stands for Structured Query Language. It has been around since the 1970's and has many different dialects of the language including MySQL, SQLite and  PostgreSQL, to name a few. Each of these has particularities such as specific functions or keywords for that specific implementation. All of these however have the same basic strucutres including basic keywords like SELECT, and the same general database architecture.
+In this section, you'll learn about SQL, which stands for Structured Query Language. It has been around since the 1970's and has many different dialects of the language including MySQL, SQLite and PostgreSQL, to name a few. Each of these has particularities such as specific functions or keywords for that specific implementation. All of these, however, have the same basic structures including basic keywords like SELECT, and the same general database architecture.
 
 ## Objectives
 
 You will be able to:
 
-* Name some differente types of SQL
+* Name some different types of SQL
 * Discuss the basic structure of a SQL database
 * Understand some basic SQL queries
 
 ## The Structure of SQL Databases 
 
-SQL Databases are the root container for data. Databases are a collection of tables. Each table is similar to a csv file or a spreadsheet within an Excel workbook. That is, tables are two dimensional objects with specific columns and associated entries organized into rows. To demonstrate, here is an outline of a database structure:
+SQL Databases are the root container for data. Databases are a collection of tables. Each table is similar to a csv-file or a spreadsheet within an Excel workbook. That is, tables are two-dimensional objects with specific columns and associated entries organized into rows. To demonstrate, here is an outline of a database structure:
 
 <img src="images/Database-Schema.png" width=700>
 
-In the diagram, each rectangle is a table, with the table name listed at top. In this case, we have 8 tables: productlines,products, orderdetails, employees, offices, customers, orders, and payments. Below each of the table names, we have a list of the various column names associated with that table. So for example, the productlines table has four columns: productLine, textDescription, htmlDescription and image. 
+In the diagram, each rectangle is a table, with the table name listed at the top. In this case, we have 8 tables: productlines, products, orderdetails, employees, offices, customers, orders, and payments. Below each of the table names, we have a list of the various column names associated with that table. So for example, the productlines table has four columns: productLine, textDescription, htmlDescription and image. 
   
-  You many also note that some of these column names are preceded by an asterix (\*). This indicates that this is the **primary key** for the table. A primary key is a unique identifier for a table. That is, there can only be unique values for this column entry. A common example is a user id. For example, in the employees table, the employeeNumber serves as the primary key for the table. This is an important design choice: if instead lastName and firstName were designated as dual primary keys, problems would arise if two employees had the same name. 
+  You may also note that some of these column names are preceded by an asterix (\*). This indicates that this is the **primary key** for the table. A primary key is a unique identifier for a table. That is, there can only be unique values for this column entry. A common example is a user id. For example, in the employees table, the employeeNumber serves as the primary key for the table. This is an important design choice: if instead lastName and firstName were designated as dual primary keys, problems would arise if two employees had the same name. 
   Primary keys also serve as a link between tables in the database. You can see which tables are related to one another via the lines between them. The circles, arrows and tick marks are all more complex categorizations of these relations which you'll learn more about later.
 
 ## Connect to SQL Databases
@@ -48,7 +48,7 @@ FROM table
 LIMIT 5;
 ```
 
-Notice how all of these statements start with the `SELECT` clause, followed by what you want to select. If selecting multiple columns, you seperate them with a comma. Then you specify where that data is being retrieved from the using the `FROM` clause followed by the table name. Afterwards, you can provide conditions such as filters or sorting. To demonstrate, here's a more complex example where you could preview the 10 most expensive payments received.
+Notice how all of these statements start with the `SELECT` clause, followed by what you want to select. If selecting multiple columns, you separate them with a comma. Then you specify where that data is being retrieved from the using the `FROM` clause followed by the table name. Afterward, you can provide conditions such as filters or sorting. To demonstrate, here's a more complex example where you could preview the 10 most expensive payments received.
 
 ```SQL
 SELECT *
