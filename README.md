@@ -3,7 +3,7 @@
 
 ## Introduction
 
-In this section, you'll learn about SQL, which stands for Structured Query Language. It has been around since the 1970's and has many different dialects of the language including MySQL, SQLite and PostgreSQL, to name a few. Each of these has particularities such as specific functions or keywords for that specific implementation. All of these, however, have the same basic structures including basic keywords like SELECT, and the same general database architecture.
+In this section, you'll learn about SQL, which stands for Structured Query Language. It has been around since the 1970s and there are many different dialects of the language including MySQL, SQLite, and PostgreSQL, to name a few. Each of these has particularities such as specific functions or keywords for that specific implementation. All of these, however, have the same basic structures including basic keywords like SELECT, and the same general database architecture.
 
 ## Objectives
 
@@ -26,7 +26,7 @@ In the diagram, each rectangle is a table, with the table name listed at the top
 
 ## Connect to SQL Databases
 
-Your initial primary use case of sql will be querying data stored within databases. To do this, you connect to the database with some sort of tool. This could be via python, as you'll see in the next lesson, the command line, or a GUI tool such as SQLWorkbench. Once you're connected to the database, you can then read and select data from the database, or even write data to the database.
+Your initial primary use case of SQL will be querying data stored within databases. To do this, you connect to the database with some sort of tool. This could be via python, as you'll see in the next lesson, the command line, or a GUI tool such as SQLWorkbench. Once you're connected to the database, you can then read and select data from the database, or even write data to the database.
 
 ## Querying Databases
 
@@ -57,8 +57,8 @@ ORDER BY amount DESC
 LIMIT 10;
 ```
 
-Notice all the keywords in SQL appear bolded and in green. Although not required, all the code here also has capitalized all of the keywords to make them further stand out.
+Notice all the keywords in SQL appear bolded and in green. Although not required, all the code here also has capitalized all of the keywords to make them stand out further.
 
 ## Summary
 
-In this lesson, you got a quick overview of what SQL is, and saw a few of your first SQL queries! Remember that there are multiple SQL dialects all with particular anomolies and differences, but the overall language is generally fairly similar and interchangeable.
+In this lesson, you got a quick overview of what SQL is, and saw a few of your first SQL queries! Remember that there are multiple SQL dialects all with particular anomalies and differences, but the overall language is generally fairly similar and interchangeable.
