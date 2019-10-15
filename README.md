@@ -13,9 +13,16 @@ SQL Databases are the root container for data. Databases are a collection of tab
 <img src="images/Database-Schema.png" width=700>
 
 In the diagram, each rectangle is a table, with the table name listed at the top. In this case, we have 8 tables: productlines, products, orderdetails, employees, offices, customers, orders, and payments. Below each of the table names, we have a list of the various column names associated with that table. So for example, the productlines table has four columns: productLine, textDescription, htmlDescription and image. 
-  
-  You may also note that some of these column names are preceded by an asterix (\*). This indicates that this is the **primary key** for the table. A primary key is a unique identifier for a table. That is, there can only be unique values for this column entry. A common example is a user id. For example, in the employees table, the employeeNumber serves as the primary key for the table. This is an important design choice: if instead lastName and firstName were designated as dual primary keys, problems would arise if two employees had the same name. 
-  Primary keys also serve as a link between tables in the database. You can see which tables are related to one another via the lines between them. The circles, arrows and tick marks are all more complex categorizations of these relations which you'll learn more about later.
+
+### Relational Data
+
+SQL is designed to work with **relational data**. This really just means pieces of data that are related to eachother. In the example above, data on the employees table has some relationship to data on the offices table, indicating that an employee may be associated with a specific office location. Likewise, certain orders are associated with certain customers. Lots of real world data is inherently related. Students have an association to a course, ingredients are related to a recipe.
+
+You may also note that some of these column names are preceded by an asterix (\*). This indicates that this is the **primary key** for the table. A primary key is a unique identifier for a table. That is, there can only be unique values for this column entry and usually a specific ID is set aside. lastName would not be a good choice for a primary key as it's common for people to have the same last names or even firstName + lastName pairings.
+
+If you look closely you'll see that the columns that are the primary key one on table can also appear on other tables. This is known as a **foreign key** aka the primary key from a different ("foreign") table. This is the core idea of how data on different tables is associated in a relational database. If you were told a specific customerNumber, and then given a list of order data that included the customerNumber, you could determine which orders were placed by that customer by matching up the primary and foreign keys.
+
+The lines, circles, arrows, and tick marks are showing different categorizations on exactly how this data is linked. You'll learn much more about these relationships later.
 
 ## Connect to SQL Databases
 
