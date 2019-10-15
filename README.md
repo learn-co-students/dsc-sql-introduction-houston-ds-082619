@@ -3,15 +3,8 @@
 
 ## Introduction
 
-In this section, you'll learn about SQL, which stands for Structured Query Language. It has been around since the 1970s and there are many different dialects of the language including MySQL, SQLite, and PostgreSQL, to name a few. Each of these has particularities such as specific functions or keywords for that specific implementation. All of these, however, have the same basic structures including basic keywords like SELECT, and the same general database architecture.
+In this section, you'll learn about SQL, which stands for Structured Query Language. It has been around since the 1970s and there are many different dialects of the language including MySQL, SQLite, and PostgreSQL, to name a few. Each of these has particularities such as specific functions or keywords for that specific implementation. All of these, however, have the same basic structures including keywords like `SELECT`, and the same general database architecture.
 
-## Objectives
-
-You will be able to:
-
-* Name some different types of SQL
-* Discuss the basic structure of a SQL database
-* Understand some basic SQL queries
 
 ## The Structure of SQL Databases 
 
@@ -26,11 +19,11 @@ In the diagram, each rectangle is a table, with the table name listed at the top
 
 ## Connect to SQL Databases
 
-Your initial primary use case of SQL will be querying data stored within databases. To do this, you connect to the database with some sort of tool. This could be via python, as you'll see in the next lesson, the command line, or a GUI tool such as SQLWorkbench. Once you're connected to the database, you can then read and select data from the database, or even write data to the database.
+Your initial primary use case of SQL will be querying data stored within databases. To do this, you connect to the database with some sort of tool. This could be via Python, as you'll see in the next lesson, the command line, or a GUI tool such as SQLWorkbench. Once you're connected to the database, you can then read and select data from the database, or even write data to the database.
 
 ## Querying Databases
 
-To retrieve data from one or more tables you usually use a `select` statement. 
+To retrieve data from one or more tables you usually use a `SELECT` statement. 
 
 A simple query would look something like this:
 ```SQL
