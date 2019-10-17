@@ -61,4 +61,4 @@ Notice all the keywords in SQL appear bolded and in green. Although not required
 
 ## Summary
 
-In this lesson, you got a quick overview of what SQL is, and saw a few of your first SQL queries! Remember that there are multiple SQL dialects all with particular anomalies and differences, but the overall language is generally fairly similar and interchangeable.
+In this lesson, you got a quick overview of what SQL is, and saw a few of your first SQL queries! Remember that there are multiple SQL dialects all with particular differences, but the overall language is generally fairly similar and interchangeable.
