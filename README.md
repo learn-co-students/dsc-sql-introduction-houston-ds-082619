@@ -1,5 +1,5 @@
 
-# SQL Introduction
+# SQL and Relational Databases - Introduction
 
 ## Introduction
 
